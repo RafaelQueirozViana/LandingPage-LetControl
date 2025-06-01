@@ -1,0 +1,30 @@
+.header,
+.section {
+    padding: 0px var(--website-spacing);
+}
+
+.section {
+    padding-top: 5rem;
+}
+
+.section {
+    background-color: #0AA1FF;
+    height: 90vh;
+
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--color-secondary);
+    width: max-content;
+    padding: 10px 20px;
+    border-radius: var(--radius-lg);
+
+}
+
+.message-container img {
+    height: 20px;
+}

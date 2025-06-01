@@ -1,0 +1,48 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    position: sticky;
+    top: 0;
+    background-color: #0AA1FF;
+
+}
+
+.header.scroll {
+    border-bottom: 1px solid #ffffff3d;
+}
+
+.header .selected {
+    position: relative;
+    color: var(--color-text-primary);
+
+
+}
+
+.header .selected::before {
+    content: '';
+    width: 70%;
+    background-color: var(--color-text-primary);
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 30px;
+}
+
+.header nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header nav p {
+    color: var(--dull-color);
+    cursor: pointer;
+}
+
+.header img {
+    height: 80px;
+    cursor: pointer;
+}

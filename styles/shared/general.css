@@ -9,9 +9,12 @@
     --color-background-grad: linearGradient();
     --hover-color: #0C4B8E;
 
+
     /* FontColors */
-    --color-text-primary: #fff;
-    --color-text-secondary: #4294ffe0;
+    --color-text-primary: #000000;
+    --color-text-secondary: #ffffffe0;
+    --color-text-terciary: #4294ffe0;
+    --color-paragraph: #5D5A5A;
     --dull-color: #ffffff;
 
     /* Tipografia */
@@ -19,13 +22,14 @@
     --font-size-base: 16px;
     --font-size-paragraph: 20px;
     --font-extra-size: 3rem;
-    --font-size-title: 2rem;
+    --font-size-title: 2.5rem;
 
     /* Spacing */
-    --website-spacing: 4rem;
+    --website-spacing: 5rem;
+    --text-box-spacing: 10px;
 
     /*Border Radius*/
-    --radius-lg: 30px;
+    --radius-large: 30px;
 }
 
 * {
@@ -45,7 +49,6 @@ a {
 
 body {
     font-family: var(--font-main);
-    background-color: rgb(77, 77, 77);
 }
 
 button {
@@ -62,13 +65,14 @@ button {
 
 h1 {
     font-size: var(--font-size-title);
-    font-weight: 500;
+    font-weight: 400;
 }
 
 p {
     font-size: var(--font-size-paragraph);
     font-weight: 400;
     letter-spacing: .1px;
+    color: var(--color-paragraph);
 }
 
 
@@ -77,18 +81,28 @@ p {
     align-items: center;
     justify-content: center;
     height: 40px;
-    color: var(--color-text-secondary);
+    color: var(--color-text-terciary);
     padding: 1rem 1.5rem;
     text-align: center;
     font-size: var(--font-size-base);
     font-weight: 550;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-large);
     background-color: var(--color-terciary);
     transition: background-color .2s ease;
 
 }
 
-.primary-button:hover {
+.primary-button:hover,
+.primary-button.blue:hover {
     background-color: var(--hover-color);
     color: #fff;
+}
+
+.primary-button.blue {
+    color: #fff;
+    background-color: var(--color-primary);
+}
+
+.centered-text {
+    text-align: center;
 }

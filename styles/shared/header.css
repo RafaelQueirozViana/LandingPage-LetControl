@@ -1,11 +1,20 @@
 .header {
     display: flex;
+    justify-content: center;
+    background-color: #0AA1FF;
+    height: 150px;
+    padding: 0 var(--website-spacing);
+
+}
+
+.header .header-content {
+    width: 100%;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 150px;
     position: sticky;
     top: 0;
-    background-color: #0AA1FF;
+
 
 }
 
@@ -15,7 +24,7 @@
 
 .header .selected {
     position: relative;
-    color: var(--color-text-primary);
+    color: var(--color-text-secondary);
 
 
 }
@@ -23,13 +32,14 @@
 .header .selected::before {
     content: '';
     width: 70%;
-    background-color: var(--color-text-primary);
+    background-color: var(--color-text-secondary);
     height: 3px;
     position: absolute;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     border-radius: 30px;
+
 }
 
 .header nav {

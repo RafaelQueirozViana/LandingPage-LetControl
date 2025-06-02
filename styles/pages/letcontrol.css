@@ -5,13 +5,12 @@
 
 .section {
     padding-top: 5rem;
-}
-
-.section {
     background-color: #0AA1FF;
-    height: 90vh;
+    height: 100vh;
 
 }
+
+
 
 .message-container {
     display: flex;
@@ -27,4 +26,20 @@
 
 .message-container img {
     height: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.play-video-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.play-video-btn p {
+    font-weight: 300;
 }

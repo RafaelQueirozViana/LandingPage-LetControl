@@ -7,6 +7,7 @@
     --color-secondary: #53BDFF;
     --color-terciary: #ffffff;
     --color-background-grad: linearGradient();
+    --hover-color: #0C4B8E;
 
     /* FontColors */
     --color-text-primary: #fff;
@@ -16,6 +17,7 @@
     /* Tipografia */
     --font-main: "Poppins", sans-serif;
     --font-size-base: 16px;
+    --font-size-paragraph: 20px;
     --font-extra-size: 3rem;
     --font-size-title: 2rem;
 
@@ -48,6 +50,10 @@ body {
 
 button {
     border: none;
+    cursor: pointer;
+
+
+
 }
 
 .big-title {
@@ -60,7 +66,7 @@ h1 {
 }
 
 p {
-    font-size: 20px;
+    font-size: var(--font-size-paragraph);
     font-weight: 400;
     letter-spacing: .1px;
 }
@@ -78,4 +84,11 @@ p {
     font-weight: 550;
     border-radius: var(--radius-lg);
     background-color: var(--color-terciary);
+    transition: background-color .2s ease;
+
+}
+
+.primary-button:hover {
+    background-color: var(--hover-color);
+    color: #fff;
 }

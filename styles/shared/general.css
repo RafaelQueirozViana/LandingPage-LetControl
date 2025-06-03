@@ -26,7 +26,8 @@
 
 
     /* Spacing */
-    --website-spacing: 5rem;
+    --website-lateral-spacing: 5rem;
+    --spacing-between-section: 6rem;
     --text-box-spacing: 10px;
 
     /*Border Radius*/
@@ -49,7 +50,9 @@ a {
 }
 
 body {
+
     font-family: var(--font-main);
+
 }
 
 button {

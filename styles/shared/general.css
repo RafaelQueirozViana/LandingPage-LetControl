@@ -32,6 +32,7 @@
 
     /*Border Radius*/
     --radius-large: 30px;
+    --radius-medium: 15px;
 }
 
 * {

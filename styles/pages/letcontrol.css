@@ -269,7 +269,8 @@ body .section:nth-child(n+3) {
 
 #ad-section h2 {
     color: #fff;
-    font-size: 2.4rem;
+    font-size: var(--font-size-subtitle);
+    font-weight: 400;
 }
 
 #ad-section p {

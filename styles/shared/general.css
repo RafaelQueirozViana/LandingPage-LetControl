@@ -113,6 +113,6 @@ p {
     background-color: var(--color-primary);
 }
 
-.centered-text {
+.secondary-button .centered-text {
     text-align: center;
 }

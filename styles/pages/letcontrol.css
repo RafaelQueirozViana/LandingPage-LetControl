@@ -7,9 +7,14 @@ body .section:nth-child(n+3) {
 }
 
 
+
+
 .section {
     padding: 0 var(--website-lateral-spacing);
+
 }
+
+
 
 .header-content,
 .section-content {
@@ -71,13 +76,15 @@ body .section:nth-child(n+3) {
     gap: 20px;
 }
 
-.buttons-container .play-video-btn {
+.img-aside-button {
     display: flex;
     align-items: center;
     gap: 10px;
+    width: max-content;
+
 }
 
-.buttons-container .play-video-btn p {
+.buttons-container .img-aside-button p {
     font-weight: 300;
 
 }
@@ -229,12 +236,55 @@ body .section:nth-child(n+3) {
     font-size: 1.2rem;
 }
 
-
-
 .question-box img {
     height: 15px;
 
 }
+
+#ad-section {
+    margin-top: 10rem;
+}
+
+#ad-section .section-content {
+    position: relative;
+    background-color: #11A5FB;
+    padding: 3rem 2rem;
+    border-radius: var(--radius-medium);
+    background-image: url(../../images/circle.png), url(../../images/circle-2.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: calc(100% + 200px) center, -400px 200px;
+    background-size: 700px;
+}
+
+
+
+#ad-section .img-aside-button {
+    gap: 15px;
+    background-color: rgb(0, 0, 0);
+    color: var(--color-text-secondary);
+    padding: .2rem 1.2rem;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+#ad-section h2 {
+    color: #fff;
+    font-size: 2.4rem;
+}
+
+#ad-section p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+#ad-section .img-aside-button p {
+    color: var(--color-text-secondary);
+    font-size: 18px;
+}
+
+
 
 
 /** For mobile devices **/

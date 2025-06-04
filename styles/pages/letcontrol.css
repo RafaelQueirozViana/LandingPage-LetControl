@@ -119,6 +119,54 @@ body .section:nth-child(n+3) {
     fill: #FFFFFF;
 }
 
+
+.cards-container {
+    display: flex;
+    gap: 30px;
+}
+
+.cards-container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    justify-content: center;
+    height: 320px;
+    background-color: rgb(222, 238, 242);
+    border-radius: 30px;
+    padding: 2.5rem;
+    transition: all .3s ease;
+    border: 1px solid #ffffff;
+}
+
+
+.cards-container .card h2 {
+    font-weight: 500;
+}
+
+.cards-container .card p {
+    font-weight: 500;
+}
+
+
+.cards-container .card img {
+    width: 30px;
+}
+
+
+
+#advantages-section .section-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+#advantages-section .section-content .centered-text {
+    font-weight: 400;
+    font-size: 3rem;
+}
+
+
 #second-section h1 {
     color: black;
 }

@@ -27,7 +27,7 @@ body .section:nth-child(n+3) {
 #first-section {
     padding-top: 4rem;
     position: relative;
-    height: 82vh;
+    height: 70vh;
     background: linear-gradient(180deg, #0AA1FF 36%, #00FFF0 100%);
 
 
@@ -68,7 +68,8 @@ body .section:nth-child(n+3) {
     display: flex;
     flex-direction: column;
     gap: var(--textbox-spacing-small);
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+
 
 }
 
@@ -88,6 +89,11 @@ body .section:nth-child(n+3) {
 .buttons-container .img-aside-button p {
     font-weight: 300;
 
+}
+
+#mobile {
+    display: flex;
+    align-self: flex-end;
 }
 
 
@@ -112,29 +118,38 @@ body .section:nth-child(n+3) {
     fill: #FFFFFF;
 }
 
-#second-section h1,
-#second-section p {
+#second-section h1 {
     color: black;
 }
 
-#mobile {
-    display: flex;
-    align-self: flex-end;
+#second-section p {
+    color: var(--color-paragraph);
 }
+
 
 .flex-img {
     width: 100%;
+
+}
+
+#first-section .flex-img {
     max-width: 600px;
     min-width: 500px;
 }
 
-#second-section .section-content {
-    align-items: center;
+#second-section .flex-img {
+    max-width: 550px;
+    min-width: 400px;
 }
 
-#second-section p {
-    color: #747F81;
+
+.hero-details {
+    margin-top: 50px;
 }
+
+#second-section .section-content {}
+
+
 
 
 

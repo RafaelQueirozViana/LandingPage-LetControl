@@ -14,7 +14,7 @@
     --color-text-primary: #000000;
     --color-text-secondary: #ffffffe0;
     --color-text-terciary: #4294ffe0;
-    --color-paragraph: #5D5A5A;
+    --color-paragraph: #747F81;
 
     --dull-color: #ffffff;
 
@@ -63,10 +63,14 @@ body {
 button {
     border: none;
     cursor: pointer;
-
-
-
 }
+
+input {
+    border: none;
+    outline: none;
+}
+
+
 
 .big-title {
     font-size: var(--font-extra-size);
@@ -121,6 +125,22 @@ p {
 .primary-button.blue {
     color: #fff;
     background-color: var(--color-primary);
+    letter-spacing: .5px;
+}
+
+.primary-input {
+    height: 50px;
+    background-color: var(--color-secondary);
+    padding: 0 1rem;
+    border-radius: var(--radius-large);
+    color: var(--color-text-secondary);
+    font-size: var(--font-size-base);
+
+
+}
+
+.primary-input::placeholder {
+    color: var(--color-text-secondary);
 }
 
 .centered-text {

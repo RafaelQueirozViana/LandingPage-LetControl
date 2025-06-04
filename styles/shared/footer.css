@@ -9,6 +9,13 @@
     gap: 50px;
 }
 
+.footer-content .primary-button {
+    display: flex;
+    align-self: flex-end;
+
+    width: 30%;
+}
+
 .footer h3,
 .footer p,
 .footer a {
@@ -37,6 +44,16 @@
 
 }
 
+.bottom-footer h3 {
+    text-transform: uppercase;
+}
+
+.bottom-footer a,
+.bottom-footer p {
+    font-size: var(--font-size-base);
+    color: #ffffffe7;
+}
+
 .bottom-footer .footer-column,
 .contact-container {
     display: flex;
@@ -45,6 +62,8 @@
 }
 
 .social-bottom-footer {
+    display: flex;
+    justify-content: end;
     padding: 3rem 0;
     border-top: 1px solid #ffffffa0;
 
@@ -55,11 +74,7 @@
     gap: 25px;
 }
 
-.bottom-footer a,
-.bottom-footer p {
-    font-size: var(--font-size-base);
-    color: #ffffffe7;
-}
+
 
 .footer-list {
     display: flex;

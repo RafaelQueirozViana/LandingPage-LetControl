@@ -17,7 +17,8 @@ body .section:nth-child(n+3) {
 
 
 .header-content,
-.section-content {
+.section-content,
+.footer-content {
     max-width: 1500px;
     margin: 0 auto;
 }
@@ -66,7 +67,7 @@ body .section:nth-child(n+3) {
 .text-box {
     display: flex;
     flex-direction: column;
-    gap: var(--text-box-spacing);
+    gap: var(--textbox-spacing-small);
     margin-bottom: 20px;
 
 }

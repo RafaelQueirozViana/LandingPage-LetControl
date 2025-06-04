@@ -15,6 +15,7 @@
     --color-text-secondary: #ffffffe0;
     --color-text-terciary: #4294ffe0;
     --color-paragraph: #5D5A5A;
+
     --dull-color: #ffffff;
 
     /* Tipografia */
@@ -29,7 +30,9 @@
     /* Spacing */
     --website-lateral-spacing: 5rem;
     --spacing-between-section: 6rem;
-    --text-box-spacing: 10px;
+    --textbox-spacing-small: 10px;
+    --textbox-spacing-medium: 20px;
+
 
     /*Border Radius*/
     --radius-large: 30px;
@@ -78,6 +81,11 @@ h1 {
 h2 {
     font-size: var(--font-size-subtitle);
     font-weight: 400;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 p {

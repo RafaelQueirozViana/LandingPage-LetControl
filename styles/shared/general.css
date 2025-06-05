@@ -6,7 +6,7 @@
     --color-primary: #1FABF4;
     --color-secondary: #53BDFF;
     --color-terciary: #ffffff;
-    --color-background-grad: linearGradient();
+    --color-background-grad: linear-gradient(180deg, #0AA1FF 36%, #00FFF0 100%);
     --hover-color: #0C4B8E;
 
 

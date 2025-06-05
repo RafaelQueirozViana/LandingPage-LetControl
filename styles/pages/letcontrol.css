@@ -24,7 +24,7 @@ body .section:nth-child(n+3) {
 }
 
 
-#first-section {
+#hero-section {
 
     position: relative;
     height: 70vh;
@@ -34,8 +34,8 @@ body .section:nth-child(n+3) {
 
 }
 
-#first-section h1,
-#first-section p {
+#hero-section h1,
+#hero-section p {
     color: var(--color-text-secondary);
 }
 
@@ -167,11 +167,11 @@ body .section:nth-child(n+3) {
 }
 
 
-#second-section h1 {
+#feature-overview-section h1 {
     color: black;
 }
 
-#second-section p {
+#feature-overview-section p {
     color: var(--color-paragraph);
 }
 
@@ -181,12 +181,12 @@ body .section:nth-child(n+3) {
 
 }
 
-#first-section .flex-img {
+#hero-section .flex-img {
     max-width: 600px;
     min-width: 500px;
 }
 
-#second-section .flex-img {
+#feature-overview-section .flex-img {
     max-width: 550px;
     min-width: 400px;
 }
@@ -217,7 +217,7 @@ body .section:nth-child(n+3) {
     justify-content: space-around;
 }
 
-#third-section .section-content {
+#app-benefits-section .section-content {
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -306,24 +306,29 @@ body .section:nth-child(n+3) {
 
 }
 
-#ad-section {
+#download-app-section {
     margin-top: 10rem;
 }
 
-#ad-section .section-content {
+#download-app-section .section-content {
     position: relative;
     background-color: #11A5FB;
     padding: 3rem 2rem;
     border-radius: var(--radius-medium);
+    background-position: calc(100% + 200px) center, calc(-20%) 250px;
+
+
+}
+
+.circle-background {
     background-image: url(../../images/circle.png), url(../../images/circle-2.png);
     background-repeat: no-repeat, no-repeat;
-    background-position: calc(100% + 200px) center, -400px 200px;
-    background-size: 700px;
+    background-size: auto 100%;
 }
 
 
 
-#ad-section .img-aside-button {
+#download-app-section .img-aside-button {
     gap: 15px;
     background-color: rgb(0, 0, 0);
     color: var(--color-text-secondary);
@@ -332,20 +337,20 @@ body .section:nth-child(n+3) {
     margin-top: 30px;
 }
 
-#ad-section h2 {
+#download-app-section h2 {
     color: #fff;
     font-size: var(--font-size-subtitle);
     font-weight: 400;
 }
 
-#ad-section p {
+#download-app-section p {
     color: #ffffff;
     font-size: 18px;
     font-weight: 300;
 }
 
 
-#ad-section .img-aside-button p {
+#download-app-section .img-aside-button p {
     color: var(--color-text-secondary);
     font-size: 18px;
 }

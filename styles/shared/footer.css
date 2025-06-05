@@ -1,7 +1,15 @@
 .footer {
     background-color: var(--color-primary);
+
     max-height: 90vh;
 }
+
+.footer.circle-background {
+    background-position: calc(100% + 240px) center, calc(-40%) 350px;
+
+}
+
+
 
 
 .footer-content {
@@ -52,6 +60,14 @@
 .bottom-footer p {
     font-size: var(--font-size-base);
     color: #ffffffe7;
+}
+
+.bottom-footer a {
+    transition: color .2s ease;
+}
+
+.bottom-footer a:hover {
+    color: var(--hover-color);
 }
 
 .bottom-footer .footer-column,

@@ -56,3 +56,9 @@
     height: 80px;
     cursor: pointer;
 }
+
+@media(max-width:900px) {
+    .header nav {
+        display: none;
+    }
+}

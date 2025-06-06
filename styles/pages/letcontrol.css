@@ -44,7 +44,8 @@ body .section:nth-child(n+3) {
 }
 
 #hero-section h1,
-#hero-section p {
+#hero-section p,
+span {
     color: var(--color-text-secondary);
 }
 
@@ -54,6 +55,10 @@ body .section:nth-child(n+3) {
 
 #hero-section .text-box p {
     max-width: 700px;
+}
+
+.mobile-text {
+    display: none;
 }
 
 .section .section-content {
@@ -72,7 +77,9 @@ body .section:nth-child(n+3) {
     align-items: center;
     gap: 10px;
     background-color: var(--color-secondary);
-    width: max-content;
+    width: 100%;
+    min-width: max-content;
+    max-width: max-content;
     padding: 10px 20px;
     border-radius: var(--radius-large);
 
@@ -93,6 +100,7 @@ body .section:nth-child(n+3) {
 
 .buttons-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -401,7 +409,7 @@ body .section:nth-child(n+3) {
 
     .custom-shape-divider-bottom-1748873893 {
         position: absolute;
-        bottom: 0px;
+        bottom: -1px;
         left: 0;
         width: 100%;
         overflow: hidden;
@@ -439,13 +447,70 @@ body .section:nth-child(n+3) {
         display: flex;
         justify-self: center;
     }
+
+
+    .message-container {
+        display: none;
+    }
 }
+
+body .section:nth-of-type(n + 2),
+.footer {
+    display: none;
+
+    /* Estilos para todas a partir da segunda */
+}
+
+
 
 @media(max-width:630px) {
     :root {
-        --website-lateral-spacing: 1rem;
+        --website-lateral-spacing: 1.5rem;
+    }
+
+    .message-container {
+        display: none !important;
     }
 
 
 
+
+
+
+}
+
+@media(max-width:450px) {
+    #hero-section .text-box {
+        text-align: initial;
+    }
+
+    #hero-section .message-container,
+    #hero-section .buttons-container {
+        justify-self: initial;
+    }
+
+    .pc-text {
+        display: none;
+    }
+
+    .mobile-text {
+        display: block;
+    }
+
+    #hero-section .hero-details {
+        margin: 0rem;
+
+    }
+
+
+    #hero-section {
+        padding-top: 1rem;
+
+    }
+
+    #hero-section .section-content {
+        justify-content: initial;
+        text-align: initial;
+
+    }
 }

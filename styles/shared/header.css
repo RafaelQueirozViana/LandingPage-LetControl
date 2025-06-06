@@ -57,8 +57,37 @@
     cursor: pointer;
 }
 
+.header .flex {
+    display: flex;
+    align-items: center;
+    gap: var(--textbox-spacing-medium);
+
+}
+
+.header .flex img {
+    display: none;
+    height: 40px;
+}
+
 @media(max-width:900px) {
     .header nav {
+        display: none;
+    }
+
+
+    .header .flex img {
+        display: block;
+    }
+
+
+    .header .header-content .logo {
+        height: 60px;
+    }
+
+}
+
+@media(max-width:450px) {
+    .header .primary-button {
         display: none;
     }
 }

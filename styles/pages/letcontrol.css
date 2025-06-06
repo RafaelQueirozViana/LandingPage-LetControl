@@ -377,7 +377,6 @@ body .section:nth-child(n+3) {
 
 
 
-/** For mobile devices **/
 
 
 @media(max-width:1400px) {
@@ -396,8 +395,6 @@ body .section:nth-child(n+3) {
         gap: 20px;
     }
 }
-
-
 
 
 @media(max-width:980px) {
@@ -442,4 +439,13 @@ body .section:nth-child(n+3) {
         display: flex;
         justify-self: center;
     }
+}
+
+@media(max-width:630px) {
+    :root {
+        --website-lateral-spacing: 1rem;
+    }
+
+
+
 }

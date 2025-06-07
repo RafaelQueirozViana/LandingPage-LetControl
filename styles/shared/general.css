@@ -22,7 +22,9 @@
     --font-main: "Poppins", sans-serif;
 
     --font-big-size: 3rem;
-    --font-size-title: 2.5rem;
+    /*used only in the first text of the hero section */
+    --font-size-title: 3rem;
+    /*used only in titles of the sections */
     --font-size-subtitle: 2.2rem;
     --font-size-paragraph: 20px;
     --font-size-base: 16px;
@@ -33,7 +35,7 @@
 
     /* Spacing */
     --website-lateral-spacing: 5rem;
-    --spacing-between-section: 6rem;
+    --spacing-between-section: 4rem;
     --textbox-spacing-small: 10px;
     --textbox-spacing-medium: 20px;
 
@@ -76,15 +78,23 @@ input {
 }
 
 /* extra size title */
-.flashy-title {
+.big-title {
     font-size: var(--font-big-size);
+}
+
+
+.section-title {
+    font-size: var(--font-size-title);
+
 }
 
 /* normal title */
 
 h1 {
-    font-size: var(--font-size-title);
+
     font-weight: 400;
+
+
 
 }
 
@@ -169,4 +179,18 @@ p {
         gap: 20px;
     }
 
+}
+
+@media(max-width:1150px) {
+    :root {
+        --font-size-title: 2.5rem;
+        --font-size-subtitle: 1.8rem;
+    }
+}
+
+@media(max-width:550px) {
+    :root {
+        --font-size-title: 2rem;
+
+    }
 }

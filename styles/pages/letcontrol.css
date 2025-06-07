@@ -8,7 +8,7 @@ body .section:nth-child(n+3) {
 
 
 
-body .section:nth-of-type(n + 4),
+body .section:nth-of-type(n + 6),
 .footer {
     display: none;
 
@@ -59,7 +59,7 @@ span {
     color: var(--color-text-secondary);
 }
 
-#hero-section .text-box .flashy-title {
+#hero-section .text-box .big-title {
     max-width: 700px;
 }
 
@@ -226,7 +226,7 @@ span {
 }
 
 #advantages-section .section-content .centered-text {
-    font-weight: 500;
+    font-weight: 400;
 }
 
 
@@ -253,15 +253,29 @@ span {
     display: flex;
     justify-content: space-around;
     margin: 50px 0;
+    gap: 25px;
 }
 
 .benefity-card {
-    max-width: 500px;
+    width: 500px;
 }
+
+.benefity-container:last-child .benefity-card {
+
+    width: 300px;
+}
+
+
 
 .image-container {
     display: flex;
     justify-content: space-around;
+    gap: var(--textbox-spacing-medium);
+}
+
+.image-container .flex-img {
+    min-width: 100px;
+    max-width: 400px;
 }
 
 #app-benefits-section .section-content {
@@ -269,6 +283,9 @@ span {
     flex-direction: column;
     gap: 25px;
 }
+
+
+
 
 #faq-section .message-container {
     background-color: transparent;
@@ -477,9 +494,7 @@ span {
     }
 
 
-    .message-container {
-        display: none;
-    }
+
 
     .buttons-container {
         gap: 10px;
@@ -487,7 +502,7 @@ span {
 
 
 
-    #advantages-section .flashy-title {
+    #advantages-section .section-title {
         text-align: initial;
         padding-left: 10px;
     }
@@ -502,6 +517,9 @@ span {
 }
 
 @media(max-width:800px) {
+
+
+
     #feature-overview-section .section-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -524,6 +542,34 @@ span {
         padding-top: 0;
         text-align: center;
     }
+
+
+    .benefity-container {
+        flex-wrap: wrap;
+        justify-content: initial;
+        justify-content: center;
+    }
+
+    .benefity-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+
+    }
+
+    .benefity-container:last-child .benefity-card {
+        display: none;
+    }
+
+
+
+
+
+
+
 }
 
 @media(max-width:630px) {
@@ -531,8 +577,20 @@ span {
         --website-lateral-spacing: 1.5rem;
     }
 
-    .message-container {
-        display: none !important;
+    #hero-section .message-container {
+        display: none;
+    }
+
+
+    .benefity-card {
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+        text-align: initial;
+
+
+
     }
 
 

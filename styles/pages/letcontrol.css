@@ -82,6 +82,38 @@ span {
     gap: 50px;
 }
 
+.flex-img {
+    display: flex;
+    width: 100%;
+}
+
+#hero-section .flex-img {
+    align-self: flex-end;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+#feature-overview-section .flex-img {
+    align-self: flex-end;
+    width: 100%;
+    max-width: 500px;
+    min-width: 350px;
+}
+
+#feature-overview-section .hero-details {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    max-width: 800px;
+
+
+}
+
+#feature-overview-section .hero-details button {
+    width: max-content;
+}
+
+
 .message-container {
     display: flex;
     align-items: center;
@@ -163,6 +195,7 @@ span {
     gap: 5px;
     justify-content: center;
     min-height: 320px;
+
     background-color: rgb(222, 238, 242);
     border-radius: 30px;
     padding: 2.5rem;
@@ -197,38 +230,17 @@ span {
 }
 
 
-#feature-overview-section h1 {
-    color: black;
-}
 
-#feature-overview-section p {
-    color: var(--color-paragraph);
-}
 
 .image-wrapper {
     height: 100%;
 }
 
-#hero-section .flex-img {
-    display: flex;
-    align-self: flex-end;
-    width: 100%;
-    max-width: 600px;
-    min-width: 300px;
-}
 
 
 
 
-/* #hero-section .flex-img {
-    max-width: 600px;
-    min-width: 500px;
-}
 
-#feature-overview-section .flex-img {
-    max-width: 550px;
-    min-width: 400px;
-} */
 
 
 
@@ -399,7 +411,7 @@ span {
         --website-lateral-spacing: 3rem;
     }
 
-    #hero-section .section-content {
+    .section-content.flex {
         gap: 20px;
     }
 
@@ -414,9 +426,10 @@ span {
     #advantages-section .cards-container .card {
 
         width: 100%;
-        height: 230px;
+        min-height: 230px;
         padding: 1rem 2rem;
     }
+
 }
 
 
@@ -468,13 +481,48 @@ span {
         display: none;
     }
 
+    .buttons-container {
+        gap: 10px;
+    }
+
+
+
     #advantages-section .flashy-title {
         text-align: initial;
         padding-left: 10px;
     }
 
-    .buttons-container {
+    #feature-overview-section .pc-text {
+        display: none;
+    }
+
+    #feature-overview-section .mobile-text {
+        display: block;
+    }
+}
+
+@media(max-width:800px) {
+    #feature-overview-section .section-content {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
         gap: 10px;
+    }
+
+    #feature-overview-section .section-content .flex-img {
+        max-width: 300px;
+        min-width: 100px;
+        align-self: center;
+
+    }
+
+    #feature-overview-section .hero-details {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 0;
+        text-align: center;
     }
 }
 
@@ -504,11 +552,11 @@ span {
         justify-self: initial;
     }
 
-    .pc-text {
+    #hero-section .pc-text {
         display: none;
     }
 
-    .mobile-text {
+    #hero-section .mobile-text {
         display: block;
     }
 

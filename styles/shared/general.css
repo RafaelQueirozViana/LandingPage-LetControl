@@ -14,7 +14,7 @@
     --color-text-primary: #000000;
     --color-text-secondary: #ffffffe0;
     --color-text-terciary: #4294ffe0;
-    --color-paragraph: #747F81;
+    --color-paragraph: #817674;
 
     --dull-color: #ffffff;
 
@@ -106,6 +106,8 @@ p {
     letter-spacing: .1px;
     color: var(--color-paragraph);
 }
+
+
 
 
 .primary-button {

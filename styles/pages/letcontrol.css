@@ -353,6 +353,7 @@ span {
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    gap: 20px;
 }
 
 
@@ -579,6 +580,25 @@ span {
 
     #hero-section .message-container {
         display: none;
+    }
+
+    #feature-overview-section .hero-details,
+    #app-benefits-section .text-box {
+        text-align: initial;
+        padding-left: 10px;
+    }
+
+    .question-container {
+        width: 100%;
+    }
+
+    .question-box {
+        padding: 0;
+    }
+
+    .question-box.open {
+        padding: 15px;
+
     }
 
 

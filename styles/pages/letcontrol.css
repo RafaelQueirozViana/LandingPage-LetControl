@@ -679,13 +679,33 @@ span {
 
     }
 
-    #download-app-section .section-content {
-        padding: 1rem;
-    }
-
-
     .question-container {
         margin-top: 50px;
     }
+
+
+    #download-app-section .section-content {
+        padding: 1.5rem;
+    }
+
+    #download-app-section .text-box h2 {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    #download-app-section .pc-text {
+        display: none;
+
+    }
+
+    #download-app-section .mobile-text {
+        display: block;
+
+    }
+
+
+
+
+
 
 }

@@ -284,6 +284,21 @@ span {
     gap: 25px;
 }
 
+#app-benefits-section .text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app-benefits-section .text-box p {
+    max-width: 1140px;
+}
+
+#app-benefits-section .text-box p,
+#app-benefits-section .text-box h1 {
+    max-width: 1140px;
+}
+
 
 
 
@@ -519,8 +534,6 @@ span {
 
 @media(max-width:800px) {
 
-
-
     #feature-overview-section .section-content {
         flex-direction: column-reverse;
         align-items: center;
@@ -557,6 +570,7 @@ span {
         align-items: center;
         justify-content: center;
         text-align: center;
+        width: 350px;
 
 
     }
@@ -586,6 +600,12 @@ span {
     #app-benefits-section .text-box {
         text-align: initial;
         padding-left: 10px;
+
+
+    }
+
+    #app-benefits-section {
+        margin: 15px;
     }
 
     .question-container {
@@ -601,13 +621,17 @@ span {
 
     }
 
+    .benefity-container {
+        margin: 20px 0;
+    }
+
 
     .benefity-card {
         display: flex;
         flex-direction: column;
         align-items: initial;
         justify-content: initial;
-        text-align: initial;
+
 
 
 

@@ -127,12 +127,13 @@ p {
     height: 40px;
     color: var(--color-text-terciary);
     padding: 1rem 1.5rem;
-    text-align: center;
     font-size: var(--font-size-base);
     font-weight: 550;
     border-radius: var(--radius-large);
     background-color: var(--color-terciary);
     transition: background-color .2s ease;
+    width: max-content;
+
 
 }
 

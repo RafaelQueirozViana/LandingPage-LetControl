@@ -8,7 +8,7 @@ body .section:nth-child(n+3) {
 
 
 
-body .section:nth-of-type(n + 6),
+body .section:nth-of-type(n + 7),
 .footer {
     display: none;
 
@@ -109,9 +109,6 @@ span {
 
 }
 
-#feature-overview-section .hero-details button {
-    width: max-content;
-}
 
 
 .message-container {
@@ -119,9 +116,7 @@ span {
     align-items: center;
     gap: 10px;
     background-color: var(--color-secondary);
-    width: 100%;
-    min-width: max-content;
-    max-width: max-content;
+    width: max-content;
     padding: 10px 20px;
     border-radius: var(--radius-large);
 
@@ -387,7 +382,11 @@ span {
 }
 
 #download-app-section {
-    margin-top: 10rem;
+    margin-top: calc(var(--spacing-between-section) * 2);
+}
+
+#download-app-section .text-box {
+    max-width: 1050px;
 }
 
 #download-app-section .section-content {
@@ -408,35 +407,36 @@ span {
 
 
 
-#download-app-section .img-aside-button {
-    gap: 15px;
-    background-color: rgb(0, 0, 0);
-    color: var(--color-text-secondary);
-    padding: .2rem 1.2rem;
-    border-radius: 10px;
-    margin-top: 30px;
-}
 
 #download-app-section h2 {
     color: var(--color-text-secondary);
-    font-weight: 400;
+
 }
 
 #download-app-section p {
     color: var(--color-text-secondary);
-    font-size: 18px;
     font-weight: 300;
 }
 
 
-#download-app-section .img-aside-button p {
-    color: var(--color-text-secondary);
-    font-size: 18px;
+#download-app-section .primary-button {
+
+    height: 60px;
+    border-radius: 10px;
+    gap: 15px;
+    padding: 1rem;
+
 }
 
+#download-app-section .primary-button p {
+    color: var(--color-text-terciary);
+    font-size: 18px;
+    font-weight: 450;
+}
 
-
-
+#download-app-section .primary-button img {
+    height: 30px;
+}
 
 
 @media(max-width:1400px) {
@@ -678,4 +678,14 @@ span {
         text-align: initial;
 
     }
+
+    #download-app-section .section-content {
+        padding: 1rem;
+    }
+
+
+    .question-container {
+        margin-top: 50px;
+    }
+
 }

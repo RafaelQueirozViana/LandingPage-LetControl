@@ -75,6 +75,7 @@ button {
 input {
     border: none;
     outline: none;
+
 }
 
 /* extra size title */
@@ -156,6 +157,7 @@ p {
     border-radius: var(--radius-large);
     color: var(--color-text-secondary);
     font-size: var(--font-size-base);
+    font-weight: 500;
 
 
 }

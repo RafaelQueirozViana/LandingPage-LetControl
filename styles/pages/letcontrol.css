@@ -8,21 +8,13 @@ body .section:nth-child(n+3) {
 
 
 
-body .section:nth-of-type(n + 7),
-.footer {
-    display: none;
-
-}
 
 
 
 
 
-
-.section,
-.header {
+.section {
     padding: 0 var(--website-lateral-spacing);
-
 }
 
 
@@ -45,12 +37,14 @@ body .section:nth-of-type(n + 7),
     background: linear-gradient(180deg, #0AA1FF 50%, #00FFF0 100%);
     padding-top: 2rem;
 
-
-
 }
 
 .hero-details {
     margin-top: 30px;
+    height: max-content;
+
+
+
 }
 
 #hero-section h1,
@@ -439,7 +433,7 @@ span {
 }
 
 
-@media(max-width:1400px) {
+@media screen and (max-width:1400px) {
     :root {
         --website-lateral-spacing: 3rem;
     }
@@ -450,7 +444,7 @@ span {
 
 }
 
-@media(max-width:1150px) {
+@media screen and (max-width:1150px) {
     #advantages-section .cards-container {
         flex-wrap: wrap;
         width: 100%;
@@ -466,7 +460,7 @@ span {
 }
 
 
-@media(max-width:980px) {
+@media screen and (max-width:980px) {
 
     .custom-shape-divider-bottom-1748873893 {
         position: absolute;
@@ -484,11 +478,14 @@ span {
 
 
     #hero-section {
-
         max-height: 530px;
         min-height: 500px;
+        background: linear-gradient(180deg, #0AA1FF 70%, #00FFF0 100%);
+
 
     }
+
+
 
 
     #hero-section .flex-img {
@@ -513,14 +510,14 @@ span {
 
 
     .buttons-container {
-        gap: 10px;
+        gap: 15px;
     }
 
 
 
     #advantages-section .section-title {
         text-align: initial;
-        padding-left: 10px;
+
     }
 
     #feature-overview-section .pc-text {
@@ -532,7 +529,7 @@ span {
     }
 }
 
-@media(max-width:800px) {
+@media screen and (max-width:800px) {
 
     #feature-overview-section .section-content {
         flex-direction: column-reverse;
@@ -587,7 +584,7 @@ span {
 
 }
 
-@media(max-width:630px) {
+@media screen and (max-width:630px) {
     :root {
         --website-lateral-spacing: 1.5rem;
     }
@@ -599,14 +596,11 @@ span {
     #feature-overview-section .hero-details,
     #app-benefits-section .text-box {
         text-align: initial;
-        padding-left: 10px;
+
 
 
     }
 
-    #app-benefits-section {
-        margin: 15px;
-    }
 
     .question-container {
         width: 100%;
@@ -644,7 +638,7 @@ span {
 
 }
 
-@media(max-width:470px) {
+@media screen and (max-width:470px) {
     #hero-section .text-box {
         text-align: initial;
     }
@@ -665,17 +659,25 @@ span {
     #hero-section .hero-details {
         margin: 0rem;
 
+
     }
 
 
     #hero-section {
-        padding-top: 1rem;
+        padding-top: 2rem;
+        max-height: none;
+        min-height: 0;
+        height: max-content;
+
 
     }
 
     #hero-section .section-content {
         justify-content: initial;
         text-align: initial;
+        height: max-content;
+
+        padding-bottom: 7rem;
 
     }
 
@@ -703,6 +705,9 @@ span {
 
     }
 
+    .header {
+        height: 100px;
+    }
 
 
 

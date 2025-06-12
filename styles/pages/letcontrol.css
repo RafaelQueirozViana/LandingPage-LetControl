@@ -27,6 +27,21 @@ body .section:nth-child(n+3) {
 }
 
 
+.js-hidden-for-transition {
+    transform: translateY(40px);
+    opacity: 0;
+
+    transition: all 1s;
+}
+
+.js-show-for-transition {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 1s;
+
+}
+
+
 #hero-section {
 
     position: relative;

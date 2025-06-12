@@ -4,7 +4,7 @@
     background-color: #0AA1FF;
     height: 120px;
     position: sticky;
-    top: 0;
+
     z-index: 11111;
     padding: 0 var(--website-lateral-spacing);
     transition: top 0.3s;

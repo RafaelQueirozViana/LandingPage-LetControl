@@ -40,24 +40,38 @@ navLinks.forEach((link) => {
 
 });
 
+const openMenuButton = document.querySelector('.mobile-menu');
 
-const openMobileMenu = () => {
+const openMobileMenu = (event) => {
     const mobileMenuContainer = document.querySelector('.header nav');
-    mobileMenuContainer.style.display = 'flex';
 
-    setTimeout(() => {
-        mobileMenuContainer.classList.add('open');
-    }, 100)
+    if (!openMenuButton.classList.contains('clicked')) {
+        openMenuButton.classList.add('clicked');
+        mobileMenuContainer.style.display = 'flex';
 
-    const links = mobileMenuContainer.querySelectorAll('a');
-    links.forEach((button) => {
-        button.addEventListener('click', () => {
-            mobileMenuContainer.classList.remove('open');
+        setTimeout(() => {
+            mobileMenuContainer.classList.add('open');
+        }, 50)
+
+        const links = mobileMenuContainer.querySelectorAll('a');
+        links.forEach((button) => {
+            button.addEventListener('click', () => {
+                mobileMenuContainer.classList.remove('open');
+                openMenuButton.classList.remove('clicked');
+            });
+
+
         });
+    }
+
+    else {
+        openMenuButton.classList.remove('clicked');
+        mobileMenuContainer.classList.remove('open');
+    };
 
 
-    });
+
+
 };
 
-const openMenuButton = document.querySelector('.mobile-menu');
 openMenuButton.addEventListener('click', openMobileMenu);

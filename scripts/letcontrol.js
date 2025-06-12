@@ -1,3 +1,4 @@
+let ignoreScroll = false;
 
 const getSectionPosition = (element) => {
     const sectionName = element.getAttribute('href');
@@ -23,6 +24,7 @@ const navSelect = (element) => {
 
 const scrollToSection = (event) => {
     event.preventDefault();
+
     navSelect(event.target)
     const position = getSectionPosition(event.target) - 150;
     window.scroll({
@@ -39,16 +41,23 @@ navLinks.forEach((link) => {
 });
 
 
-let lastScrollY = window.scrollY;
-const header = document.querySelector('.header');
+const openMobileMenu = () => {
+    const mobileMenuContainer = document.querySelector('.header nav');
+    mobileMenuContainer.style.display = 'flex';
 
-window.addEventListener("scroll", () => {
-    if (window.scrollY > lastScrollY) {
-        // Rolando para baixo
-        header.style.top = "-120px"; // Oculta o header
-    } else {
-        // Rolando para cima
-        header.style.top = "0";
-    }
-    lastScrollY = window.scrollY;
-});
+    setTimeout(() => {
+        mobileMenuContainer.classList.add('open');
+    }, 100)
+
+    const links = mobileMenuContainer.querySelectorAll('a');
+    links.forEach((button) => {
+        button.addEventListener('click', () => {
+            mobileMenuContainer.classList.remove('open');
+        });
+
+
+    });
+};
+
+const openMenuButton = document.querySelector('.mobile-menu');
+openMenuButton.addEventListener('click', openMobileMenu);

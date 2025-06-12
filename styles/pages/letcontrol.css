@@ -376,7 +376,7 @@ span {
 }
 
 #download-app-section {
-    margin-top: calc(var(--spacing-between-section) * 2);
+    margin: calc(var(--spacing-between-section) * 2) 0;
 }
 
 #download-app-section .text-box {
@@ -664,7 +664,7 @@ span {
 
 
     #hero-section {
-        padding-top: 2rem;
+        padding-top: 1rem;
         max-height: none;
         min-height: 0;
         height: max-content;

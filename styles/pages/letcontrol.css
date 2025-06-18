@@ -8,11 +8,6 @@ body .section:nth-child(n+3) {
 
 
 
-
-
-
-
-
 .section {
     padding: 0 var(--website-lateral-spacing);
 }
@@ -200,7 +195,7 @@ span {
     justify-content: center;
     min-height: 320px;
 
-    background-color: rgb(222, 238, 242);
+    background-color: rgba(167, 167, 194, 0.259);
     border-radius: 30px;
     padding: 2.5rem;
     transition: all .3s ease;
@@ -239,16 +234,6 @@ span {
 .image-wrapper {
     height: 100%;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -340,6 +325,7 @@ span {
 
     border-radius: var(--radius-medium);
     padding: 0rem 1.5rem;
+    transition: all .3s ease ;
 }
 
 .question-box.open {
@@ -592,11 +578,6 @@ span {
     }
 
 
-
-
-
-
-
 }
 
 @media screen and (max-width:630px) {
@@ -611,8 +592,6 @@ span {
     #feature-overview-section .hero-details,
     #app-benefits-section .text-box {
         text-align: initial;
-
-
 
     }
 
@@ -642,13 +621,7 @@ span {
         justify-content: initial;
 
 
-
-
     }
-
-
-
-
 
 
 }
@@ -719,9 +692,6 @@ span {
         display: block;
 
     }
-
-
-
 
 
 

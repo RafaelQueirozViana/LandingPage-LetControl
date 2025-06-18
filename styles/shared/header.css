@@ -4,7 +4,7 @@
     background-color: #0AA1FF;
     height: 120px;
     position: sticky;
-
+   
     z-index: 11111;
     padding: 0 var(--website-lateral-spacing);
     transition: top 0.3s;
@@ -139,6 +139,13 @@
 }
 
 @media(max-width:900px) {
+
+    .header {
+        top: 0; 
+    }
+    
+   
+
     .header nav {
         display: none;
         position: absolute;
@@ -161,6 +168,9 @@
 
         opacity: 1;
     }
+
+
+
 
     .header nav a {
         font-size: 1.5rem;

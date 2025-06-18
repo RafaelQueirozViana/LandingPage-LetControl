@@ -87,4 +87,19 @@ const sections = document.querySelectorAll('.js-hidden-for-transition');
 sections.forEach((element) => myObserver.observe(element));
 
 
+const questionButtons = document.querySelectorAll('.question-box');
 
+questionButtons.forEach(button => {
+    button.addEventListener('click', () => {
+
+        if(button.classList.contains('open') ) {
+            button.classList.remove('open');
+        }
+
+        else {
+            button.classList.add('open');
+        }
+
+
+    });
+});

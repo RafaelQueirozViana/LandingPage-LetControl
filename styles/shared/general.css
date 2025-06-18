@@ -8,12 +8,11 @@ html {
 
 :root {
     /* Colors */
-
     --color-primary: #1FABF4;
     --color-secondary: #53BDFF;
     --color-terciary: #ffffff;
     --color-background-grad: linear-gradient(180deg, #0AA1FF 36%, #00FFF0 100%);
-    --hover-color: #0C4B8E;
+    --hover-color: #0b60ba;
 
 
     /* FontColors */
@@ -34,9 +33,6 @@ html {
     --font-size-subtitle: 2.2rem;
     --font-size-paragraph: 20px;
     --font-size-base: 16px;
-
-
-
 
 
     /* Spacing */
@@ -140,6 +136,7 @@ a {
     background-color: var(--color-terciary);
     transition: background-color .2s ease;
     width: max-content;
+
 
 
 }
